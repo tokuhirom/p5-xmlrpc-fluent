@@ -2,7 +2,8 @@ use inc::Module::Install;
 name 'XMLRPC-Fluent';
 all_from 'lib/XMLRPC/Fluent.pm';
 
-# requires '';
+requires 'Any::Moose' => 0.10;
+requires 'XMLRPC::Lite' => 0.10;
 
 tests 't/*.t';
 author_tests 'xt';
